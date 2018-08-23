@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040CE035212CFED60005F201 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 040CE034212CFED60005F201 /* NSDate+YYAdd.m */; };
+		045F684C212BFF6700D1326D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F684B212BFF6700D1326D /* AppDelegate.m */; };
+		045F684F212BFF6700D1326D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F684E212BFF6700D1326D /* ViewController.m */; };
+		045F6852212BFF6700D1326D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F6850212BFF6700D1326D /* Main.storyboard */; };
+		045F6854212BFF6900D1326D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045F6853212BFF6900D1326D /* Assets.xcassets */; };
+		045F6857212BFF6900D1326D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F6855212BFF6900D1326D /* LaunchScreen.storyboard */; };
+		045F685A212BFF6900D1326D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6859212BFF6900D1326D /* main.m */; };
+		045F6864212BFF6900D1326D /* YQDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6863212BFF6900D1326D /* YQDatePickerTests.m */; };
+		045F686F212BFF6900D1326D /* YQDatePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F686E212BFF6900D1326D /* YQDatePickerUITests.m */; };
+		045F687E212C00FE00D1326D /* YQDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F687D212C00FE00D1326D /* YQDatePickerView.m */; };
+		045F6899212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6881212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		045F689A212C076100D1326D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F688A212C076100D1326D /* ViewController+MASAdditions.m */; };
+		045F689B212C076100D1326D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F688E212C076100D1326D /* MASCompositeConstraint.m */; };
+		045F689C212C076100D1326D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F688F212C076100D1326D /* MASConstraintMaker.m */; };
+		045F689D212C076100D1326D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6890212C076100D1326D /* MASLayoutConstraint.m */; };
+		045F689E212C076100D1326D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6891212C076100D1326D /* NSArray+MASAdditions.m */; };
+		045F689F212C076100D1326D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6892212C076100D1326D /* View+MASAdditions.m */; };
+		045F68A0212C076100D1326D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6895212C076100D1326D /* MASConstraint.m */; };
+		045F68A1212C076100D1326D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6897212C076100D1326D /* MASViewConstraint.m */; };
+		045F68A2212C076100D1326D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F6898212C076100D1326D /* MASViewAttribute.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045F6860212BFF6900D1326D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F683F212BFF6700D1326D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045F6846212BFF6700D1326D;
+			remoteInfo = YQDatePicker;
+		};
+		045F686B212BFF6900D1326D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F683F212BFF6700D1326D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045F6846212BFF6700D1326D;
+			remoteInfo = YQDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040CE033212CFED60005F201 /* NSDate+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+YYAdd.h"; sourceTree = "<group>"; };
+		040CE034212CFED60005F201 /* NSDate+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YYAdd.m"; sourceTree = "<group>"; };
+		045F6847212BFF6700D1326D /* YQDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045F684A212BFF6700D1326D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045F684B212BFF6700D1326D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045F684D212BFF6700D1326D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		045F684E212BFF6700D1326D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		045F6851212BFF6700D1326D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045F6853212BFF6900D1326D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045F6856212BFF6900D1326D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045F6858212BFF6900D1326D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F6859212BFF6900D1326D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045F685F212BFF6900D1326D /* YQDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045F6863212BFF6900D1326D /* YQDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQDatePickerTests.m; sourceTree = "<group>"; };
+		045F6865212BFF6900D1326D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F686A212BFF6900D1326D /* YQDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045F686E212BFF6900D1326D /* YQDatePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQDatePickerUITests.m; sourceTree = "<group>"; };
+		045F6870212BFF6900D1326D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F687C212C00FE00D1326D /* YQDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQDatePickerView.h; sourceTree = "<group>"; };
+		045F687D212C00FE00D1326D /* YQDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQDatePickerView.m; sourceTree = "<group>"; };
+		045F6880212C076100D1326D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		045F6881212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		045F6882212C076100D1326D /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		045F6883212C076100D1326D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		045F6884212C076100D1326D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		045F6885212C076100D1326D /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		045F6886212C076100D1326D /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		045F6887212C076100D1326D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		045F6888212C076100D1326D /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		045F6889212C076100D1326D /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		045F688A212C076100D1326D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		045F688B212C076100D1326D /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		045F688C212C076100D1326D /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		045F688D212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		045F688E212C076100D1326D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		045F688F212C076100D1326D /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		045F6890212C076100D1326D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		045F6891212C076100D1326D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		045F6892212C076100D1326D /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		045F6893212C076100D1326D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		045F6894212C076100D1326D /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		045F6895212C076100D1326D /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		045F6896212C076100D1326D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		045F6897212C076100D1326D /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		045F6898212C076100D1326D /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045F6844212BFF6700D1326D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F685C212BFF6900D1326D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F6867212BFF6900D1326D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045F683E212BFF6700D1326D = {
+			isa = PBXGroup;
+			children = (
+				045F6849212BFF6700D1326D /* YQDatePicker */,
+				045F6862212BFF6900D1326D /* YQDatePickerTests */,
+				045F686D212BFF6900D1326D /* YQDatePickerUITests */,
+				045F6848212BFF6700D1326D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045F6848212BFF6700D1326D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045F6847212BFF6700D1326D /* YQDatePicker.app */,
+				045F685F212BFF6900D1326D /* YQDatePickerTests.xctest */,
+				045F686A212BFF6900D1326D /* YQDatePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045F6849212BFF6700D1326D /* YQDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				045F684A212BFF6700D1326D /* AppDelegate.h */,
+				045F684B212BFF6700D1326D /* AppDelegate.m */,
+				045F687C212C00FE00D1326D /* YQDatePickerView.h */,
+				045F687D212C00FE00D1326D /* YQDatePickerView.m */,
+				040CE033212CFED60005F201 /* NSDate+YYAdd.h */,
+				040CE034212CFED60005F201 /* NSDate+YYAdd.m */,
+				045F684D212BFF6700D1326D /* ViewController.h */,
+				045F684E212BFF6700D1326D /* ViewController.m */,
+				045F6850212BFF6700D1326D /* Main.storyboard */,
+				045F6853212BFF6900D1326D /* Assets.xcassets */,
+				045F6855212BFF6900D1326D /* LaunchScreen.storyboard */,
+				045F6858212BFF6900D1326D /* Info.plist */,
+				045F6859212BFF6900D1326D /* main.m */,
+				045F687F212C076100D1326D /* Masonry */,
+			);
+			path = YQDatePicker;
+			sourceTree = "<group>";
+		};
+		045F6862212BFF6900D1326D /* YQDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				045F6863212BFF6900D1326D /* YQDatePickerTests.m */,
+				045F6865212BFF6900D1326D /* Info.plist */,
+			);
+			path = YQDatePickerTests;
+			sourceTree = "<group>";
+		};
+		045F686D212BFF6900D1326D /* YQDatePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				045F686E212BFF6900D1326D /* YQDatePickerUITests.m */,
+				045F6870212BFF6900D1326D /* Info.plist */,
+			);
+			path = YQDatePickerUITests;
+			sourceTree = "<group>";
+		};
+		045F687F212C076100D1326D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				045F6880212C076100D1326D /* MASCompositeConstraint.h */,
+				045F688E212C076100D1326D /* MASCompositeConstraint.m */,
+				045F688C212C076100D1326D /* MASConstraint.h */,
+				045F6895212C076100D1326D /* MASConstraint.m */,
+				045F6882212C076100D1326D /* MASConstraint+Private.h */,
+				045F6885212C076100D1326D /* MASConstraintMaker.h */,
+				045F688F212C076100D1326D /* MASConstraintMaker.m */,
+				045F6883212C076100D1326D /* MASLayoutConstraint.h */,
+				045F6890212C076100D1326D /* MASLayoutConstraint.m */,
+				045F6894212C076100D1326D /* Masonry.h */,
+				045F6888212C076100D1326D /* MASUtilities.h */,
+				045F6889212C076100D1326D /* MASViewAttribute.h */,
+				045F6898212C076100D1326D /* MASViewAttribute.m */,
+				045F688B212C076100D1326D /* MASViewConstraint.h */,
+				045F6897212C076100D1326D /* MASViewConstraint.m */,
+				045F6887212C076100D1326D /* NSArray+MASAdditions.h */,
+				045F6891212C076100D1326D /* NSArray+MASAdditions.m */,
+				045F6884212C076100D1326D /* NSArray+MASShorthandAdditions.h */,
+				045F688D212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				045F6881212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				045F6886212C076100D1326D /* View+MASAdditions.h */,
+				045F6892212C076100D1326D /* View+MASAdditions.m */,
+				045F6893212C076100D1326D /* View+MASShorthandAdditions.h */,
+				045F6896212C076100D1326D /* ViewController+MASAdditions.h */,
+				045F688A212C076100D1326D /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045F6846212BFF6700D1326D /* YQDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045F6873212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePicker" */;
+			buildPhases = (
+				045F6843212BFF6700D1326D /* Sources */,
+				045F6844212BFF6700D1326D /* Frameworks */,
+				045F6845212BFF6700D1326D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQDatePicker;
+			productName = YQDatePicker;
+			productReference = 045F6847212BFF6700D1326D /* YQDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045F685E212BFF6900D1326D /* YQDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045F6876212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePickerTests" */;
+			buildPhases = (
+				045F685B212BFF6900D1326D /* Sources */,
+				045F685C212BFF6900D1326D /* Frameworks */,
+				045F685D212BFF6900D1326D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045F6861212BFF6900D1326D /* PBXTargetDependency */,
+			);
+			name = YQDatePickerTests;
+			productName = YQDatePickerTests;
+			productReference = 045F685F212BFF6900D1326D /* YQDatePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		045F6869212BFF6900D1326D /* YQDatePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045F6879212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePickerUITests" */;
+			buildPhases = (
+				045F6866212BFF6900D1326D /* Sources */,
+				045F6867212BFF6900D1326D /* Frameworks */,
+				045F6868212BFF6900D1326D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045F686C212BFF6900D1326D /* PBXTargetDependency */,
+			);
+			name = YQDatePickerUITests;
+			productName = YQDatePickerUITests;
+			productReference = 045F686A212BFF6900D1326D /* YQDatePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045F683F212BFF6700D1326D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = DaveYou;
+				TargetAttributes = {
+					045F6846212BFF6700D1326D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					045F685E212BFF6900D1326D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 045F6846212BFF6700D1326D;
+					};
+					045F6869212BFF6900D1326D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 045F6846212BFF6700D1326D;
+					};
+				};
+			};
+			buildConfigurationList = 045F6842212BFF6700D1326D /* Build configuration list for PBXProject "YQDatePicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045F683E212BFF6700D1326D;
+			productRefGroup = 045F6848212BFF6700D1326D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045F6846212BFF6700D1326D /* YQDatePicker */,
+				045F685E212BFF6900D1326D /* YQDatePickerTests */,
+				045F6869212BFF6900D1326D /* YQDatePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045F6845212BFF6700D1326D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F6857212BFF6900D1326D /* LaunchScreen.storyboard in Resources */,
+				045F6854212BFF6900D1326D /* Assets.xcassets in Resources */,
+				045F6852212BFF6700D1326D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F685D212BFF6900D1326D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F6868212BFF6900D1326D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045F6843212BFF6700D1326D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F68A1212C076100D1326D /* MASViewConstraint.m in Sources */,
+				045F68A2212C076100D1326D /* MASViewAttribute.m in Sources */,
+				045F684F212BFF6700D1326D /* ViewController.m in Sources */,
+				045F685A212BFF6900D1326D /* main.m in Sources */,
+				045F689E212C076100D1326D /* NSArray+MASAdditions.m in Sources */,
+				045F689A212C076100D1326D /* ViewController+MASAdditions.m in Sources */,
+				045F689B212C076100D1326D /* MASCompositeConstraint.m in Sources */,
+				045F687E212C00FE00D1326D /* YQDatePickerView.m in Sources */,
+				045F689F212C076100D1326D /* View+MASAdditions.m in Sources */,
+				040CE035212CFED60005F201 /* NSDate+YYAdd.m in Sources */,
+				045F689C212C076100D1326D /* MASConstraintMaker.m in Sources */,
+				045F68A0212C076100D1326D /* MASConstraint.m in Sources */,
+				045F6899212C076100D1326D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				045F689D212C076100D1326D /* MASLayoutConstraint.m in Sources */,
+				045F684C212BFF6700D1326D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F685B212BFF6900D1326D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F6864212BFF6900D1326D /* YQDatePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045F6866212BFF6900D1326D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F686F212BFF6900D1326D /* YQDatePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045F6861212BFF6900D1326D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045F6846212BFF6700D1326D /* YQDatePicker */;
+			targetProxy = 045F6860212BFF6900D1326D /* PBXContainerItemProxy */;
+		};
+		045F686C212BFF6900D1326D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045F6846212BFF6700D1326D /* YQDatePicker */;
+			targetProxy = 045F686B212BFF6900D1326D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045F6850212BFF6700D1326D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045F6851212BFF6700D1326D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045F6855212BFF6900D1326D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045F6856212BFF6900D1326D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045F6871212BFF6900D1326D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045F6872212BFF6900D1326D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045F6874212BFF6900D1326D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045F6875212BFF6900D1326D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		045F6877212BFF6900D1326D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Debug;
+		};
+		045F6878212BFF6900D1326D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQDatePicker.app/YQDatePicker";
+			};
+			name = Release;
+		};
+		045F687A212BFF6900D1326D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQDatePicker;
+			};
+			name = Debug;
+		};
+		045F687B212BFF6900D1326D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YQDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongqiang.you.YQDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQDatePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045F6842212BFF6700D1326D /* Build configuration list for PBXProject "YQDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F6871212BFF6900D1326D /* Debug */,
+				045F6872212BFF6900D1326D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045F6873212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F6874212BFF6900D1326D /* Debug */,
+				045F6875212BFF6900D1326D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045F6876212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F6877212BFF6900D1326D /* Debug */,
+				045F6878212BFF6900D1326D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045F6879212BFF6900D1326D /* Build configuration list for PBXNativeTarget "YQDatePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F687A212BFF6900D1326D /* Debug */,
+				045F687B212BFF6900D1326D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045F683F212BFF6700D1326D /* Project object */;
+}
