@@ -206,7 +206,17 @@
         }
         
         [self.yqDaysArr removeAllObjects];
-        for (NSInteger i = _userSelectedDay; i <= 31; i++) {
+        NSInteger days = 31;
+        if (self.month == 1 || self.month == 3 || self.month == 5 || self.month == 7 ||self.month == 8 || self.month == 10 || self.month == 12) {
+            days = 31;
+        }else if (self.month == 4 || self.month == 6 || self.month == 9 || self.month == 11) {
+            days = 30;
+        }else if ([self isLeapYear:self.year]) {
+            days = 29;
+        }else {
+            days = 28;
+        }
+        for (NSInteger i = _userSelectedDay; i <= days; i++) {
             [self.yqDaysArr addObject:[NSString stringWithFormat:@"%ld", i]];
         }
     }else if (self.beginDateType == YQBeginDateDefault && self.endDateType == YQEndDateUntilNow) {
@@ -363,8 +373,6 @@
         for (NSInteger i = self.components.day; i <= 31; i++) {
             [self.yqDaysArr addObject:[NSString stringWithFormat:@"%ld", i]];
         }
-        
-        [self updateUserInterface];
     }
     
     if (self.beginDateType == YQBeginDateFromDetailDate && self.endDateType == YQEndDateDefault) {
@@ -382,8 +390,6 @@
         for (NSInteger i = _userSelectedDay; i <= 31; i++) {
             [self.yqDaysArr addObject:[NSString stringWithFormat:@"%ld", i]];
         }
-        
-        [self updateUserInterface];
     }
     
     if (self.beginDateType == YQBeginDateDefault && self.endDateType == YQEndDateUntilNow) {
@@ -401,9 +407,9 @@
         for (NSInteger i = 1; i <= self.components.day; i++) {
             [self.yqDaysArr addObject:[NSString stringWithFormat:@"%ld", i]];
         }
-        
-        [self updateUserInterface];
     }
+    
+    [self updateUserInterface];
 }
 
 - (void)setDay:(NSInteger)day {
